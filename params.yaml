@@ -1,0 +1,6 @@
+make_dataset:
+  test_split: 0.2
+  seed: 27
+# build_feautures:
+#   list_of_dropped_columns: ['id','pickup_datetime','dropoff_datetime','store_and_fwd_flag']
+#   target: 'trip_duration'

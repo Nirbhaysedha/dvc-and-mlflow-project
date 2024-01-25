@@ -1,0 +1,13 @@
+stages:
+  make_dataset:
+    cmd: python ./src/data/make_dataset.py ./data/raw/raw.csv
+    deps:
+    - ./src/data/make_dataset.py/
+    - ./data/raw/raw.csv/
+    params:
+    - make_dataset.test_split
+    - make_dataset.seed
+    outs:
+    - ./data/processed/
+    
+    
